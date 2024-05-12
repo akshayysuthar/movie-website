@@ -1,4 +1,35 @@
-[{
+[
+  {
+    "name": "John Wick Chapter 4",
+    "imdb": 9.8,
+    "date": "2022",
+    "sposter": "img/Jhon Wick.jpg",
+    "bposter": "img/jhon wick1.webp",
+    "genre": "Action",
+    "type": "movie",
+    "url": "jhon wick.html",
+    "trailer": "video/john wick.webm",
+    "intro": "With the price on his head ever increasing, legendary hit man John Wick takes his fight against the High Table global as he seeks out the most powerful players in the underworld, from New York to Paris to Japan to Berlin.",
+    "low": "video/Jhon Wick 480ph.mp4",
+    "medium": "video/Jhon Wick 720ph.mp4",
+    "high": "video/Jhon Wick 1080ph.mp4"
+  },
+  {
+    "name": "Jurassic World",
+    "imdb": 8.0,
+    "date": "2022",
+    "sposter": "img/jurassic world.jpg",
+    "bposter": "img/jurassic world1.jpg",
+    "genre": "Action",
+    "intro": "Four years after the destruction of Isla Nublar, dinosaurs now live and hunt alongside humans all over the world. This fragile balance will reshape the future and determine, once and for all, whether human beings are to remain the apex predators on a planet they now share with history's most fearsome creatures.",
+    "type": "movie",
+    "url": "jurassic world.html",
+    "trailer": "video/jurassic world.webm",
+    "low": "video/jurassic world 480ph.mp4",
+    "medium": "video/jurassic world 720ph.mp4",
+    "high": "video/jurassic world 1080ph.mp4"
+  },
+  {
     "name": "The Boys",
     "imdb": 9.3,
     "date": "2022",
@@ -12,7 +43,8 @@
     "low": "video/theboys.webm",
     "medium": "video/theboys720ph.mp4",
     "high": "video/theboys1080ph.mp4"
-}, {
+  },
+  {
     "name": "Money Heist",
     "imdb": 9.9,
     "date": "2020",
@@ -21,38 +53,30 @@
     "genre": "Action",
     "type": "series",
     "url": "money heist.html",
-    "trailer": "",
+    "intro": "“Money Heist” is a thrilling action series that follows a group of robbers as they plan and execute heists on the Royal Mint of Spain. With high stakes, intricate plans, and unexpected twists, this show keeps viewers on the edge of their seats.",
+    "trailer": "video/Money Heist.mp4",
     "low": "video/money heist 480ph.mp4",
     "medium": "video/money heist 720ph.mp4",
     "high": "video/money heist 1080ph.mp4"
-}, {
-    "name": "John Wick",
-    "imdb": 9.8,
-    "date": "2022",
-    "sposter": "img/Jhon Wick.jpg",
-    "bposter": "img/jhon wick1.webp",
-    "genre": "Action",
-    "type": "movie",
-    "url": "jhon wick.html",
-    "trailer": "",
-    "low": "video/Jhon Wick 480ph.mp4",
-    "medium": "video/Jhon Wick 720ph.mp4",
-    "high": "video/Jhon Wick 1080ph.mp4"
-}, {
-    "name": "Ant Man",
+  },
+  {
+    "name": "Ant-Man and The Wasp Quantumania ",
+    "intro": "Ant-Man and The Wasp Quantumania” continues the adventures of Scott Lang (Ant-Man) and Hope van Dyne (The Wasp) as they navigate the quantum realm. With humor, action, and mind-bending science, this film explores the hidden dimensions of the Marvel Cinematic Universe.",
     "imdb": 8.9,
-    "date": "2017",
+    "date": "2022",
     "sposter": "img/ant man.jpg",
     "bposter": "img/ant man1.jpg",
     "genre": "Action",
     "type": "movie",
     "url": "ant man.html",
-    "trailer": "",
+    "trailer": "video/Ant-Man and The Wasp Quantumania .mp4",
     "low": "video/ant man 480ph.mp4",
     "medium": "video/ant man 720ph.mp4",
     "high": "video/ant man 1080ph.mp4"
-}, {
-    "name": "Avengers",
+  },
+  {
+    "name": "Avengers: Infinity War",
+    "intro": "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.",
     "imdb": 9.9,
     "date": "2012",
     "sposter": "img/avengers.jpg",
@@ -60,12 +84,14 @@
     "genre": "Action",
     "type": "movie",
     "url": "avengers.html",
-    "trailer": "video/theboys.webm",
+    "trailer": "video/Avengers Infinity War.mp4",
     "low": "video/avengers 480ph.mp4",
     "medium": "video/avengers 720ph.mp4",
     "high": "video/avengers 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Moon Knight",
+    "intro": "Steven Grant and mercenary Marc Spector investigate the mysteries of the Egyptian gods from inside the same body.",
     "imdb": 7.3,
     "date": "2022",
     "sposter": "img/moon knight.jpg",
@@ -73,12 +99,15 @@
     "genre": "Action",
     "type": "series",
     "url": "moon knight.html",
-    "trailer": "",
+    "trailer": "video/Moon Knight.mp4",
     "low": "video/moon knight 480ph.mp4",
     "medium": "video/moon knight 720ph.mp4",
     "high": "video/moon knight 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Kota Factory",
+    "intro": "Like many students from across India, Vaibhav comes to Kota to prepare for JEE and NEET. Along with his friends, he navigates campus life and works hard to get into IIT.",
+
     "imdb": 9.6,
     "date": "2020",
     "sposter": "img/kota factory.jpg",
@@ -86,12 +115,15 @@
     "genre": "Action",
     "type": "series",
     "url": "kota factory.html",
-    "trailer": " ",
+    "trailer": "video/Kota Factory.mp4",
     "low": "video/kota factory 480ph.mp4",
     "medium": "video/kota factory 720ph.mp4",
     "high": "video/kota factory 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Collage Romance",
+    "intro": "Three friends, Karan, Trippy and Naira, are inseparable and begin their college life together. However, when they fall in love, they face challenges in their romantic lives.",
+
     "imdb": 7.9,
     "date": "2021",
     "sposter": "img/collage romance.jpg",
@@ -99,11 +131,12 @@
     "genre": "Action",
     "type": "series",
     "url": "collage romance.html",
-    "trailer": " ",
+    "trailer": "video/College Romance.mp4",
     "low": "video/collage romance 480ph.mp4",
     "medium": "video/collage romance 720ph.mp4",
     "high": "video/collage romance 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Thor Love Of Thunder",
     "imdb": 8.8,
     "date": "2022",
@@ -112,11 +145,13 @@
     "genre": "Action",
     "type": "movie",
     "url": "thor love of thunder.html",
-    "trailer": " ",
+    "trailer": "video/Thor Love and Thunder.mp4",
     "low": "video/thor love of thunder 480ph.mp4",
     "medium": "video/thor love of thunder 720ph.mp4",
+    "intro": "Thor embarks on a journey unlike anything he's ever faced -- a quest for inner peace. However, his retirement gets interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods. To combat the threat, Thor enlists the help of King Valkyrie, Korg and ex-girlfriend Jane Foster, who -- to his surprise -- inexplicably wields his magical hammer. Together, they set out on a harrowing cosmic adventure to uncover the mystery of the God Butcher's vengeance.",
     "high": "video/thor love of thunder 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Uncharted",
     "imdb": 9.8,
     "date": "2022",
@@ -125,24 +160,13 @@
     "genre": "Action",
     "type": "movie",
     "url": "uncharted.html",
-    "trailer": " ",
+    "trailer": "video/UNCHARTED.mp4",
+    "intro": "Victor Sullivan recruits Nathan Drake to help him find the lost fortune of Ferdinand Magellan. However, they face competition from Santiago Moncada, who believes that the treasure belongs to him.",
     "low": "video/uncharted 480ph.mp4",
     "medium": "video/uncharted 720ph.mp4",
     "high": "video/uncharted 1080ph.mp4"
-}, {
-    "name": "Eesho",
-    "imdb": 8.2,
-    "date": "2022",
-    "sposter": "img/eesho.jpeg",
-    "bposter": "img/eesho1.jpg",
-    "genre": "Action",
-    "type": "movie",
-    "url": "eesho.html",
-    "trailer": " ",
-    "low": "video/eesho 480ph.mp4",
-    "medium": "video/eesho 720ph.mp4",
-    "high": "video/eesho 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Top Gun",
     "imdb": 8.0,
     "date": "2022",
@@ -151,26 +175,17 @@
     "genre": "Action",
     "type": "movie",
     "url": "topgun.html",
+    "intro": "Thirty years of service leads Maverick to train a group of elite TOPGUN graduates to prepare for a high-profile mission while Maverick battles his past demons.",
     "trailer": " ",
     "low": "video/topgun 480ph.mp4",
     "medium": "video/topgun 720ph.mp4",
     "high": "video/topgun 1080ph.mp4"
-}, {
-    "name": "Jurassic World",
-    "imdb": 8.0,
-    "date": "2022",
-    "sposter": "img/jurassic world.jpg",
-    "bposter": "img/jurassic world1.jpg",
-    "genre": "Action",
-    "type": "movie",
-    "url": "jurassic world.html",
-    "trailer": " ",
-    "low": "video/jurassic world 480ph.mp4",
-    "medium": "video/jurassic world 720ph.mp4",
-    "high": "video/jurassic world 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Eternals",
     "imdb": 9.0,
+    "intro": "The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.",
+
     "date": "2022",
     "sposter": "img/eternals.jpg",
     "bposter": "img/eternals1.webp",
@@ -181,8 +196,11 @@
     "low": "video/eternals 480ph.mp4",
     "medium": "video/eternals 720ph.mp4",
     "high": "video/eternals 1080ph.mp4"
-}, {
+  },
+  {
     "name": "Spider Man",
+    "intro": "Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.",
+
     "imdb": 9.9,
     "date": "2020",
     "sposter": "img/spiderman.jpg",
@@ -190,8 +208,9 @@
     "genre": "Action",
     "type": "movie",
     "url": "spiderman.html",
-    "trailer": " ",
+    "trailer": "video/Spider Man.mp4",
     "low": "video/spiderman 480ph.mp4",
     "medium": "video/spiderman 720ph.mp4",
     "high": "video/spiderman 1080ph.mp4"
-}]
+  }
+]

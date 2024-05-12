@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header id="movie-posters">
+        <!-- <div id="video">
+    </div> -->
+        <nav>
+            <div class="logo_ul">
+                <img src="img/logo.png" alt="" />
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a id="series" href="#">Series</a></li>
+                    <li><a id="movies" href="#">Movies</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+            <div class="search_user">
+                <input type="text" placeholder="Search..." id="search_input">
+                <img src="img/user.jpg" alt="">
+                <div class="search">
+                </div>
+        </nav>
+        <div class="content">
+            <h1 id="movie_title"></h1>
+            <p id="movie_short-intro"> </p>
+            <div class="details">
+                <h6 id="movie_type"></h6>
+                <h5 id="movie_gen"></h5>
+                <h4 id="movie_date"></h4>
+                <h3><span>IMDB</span>
+                    <p id="movie_rate"></p>
+                </h3>
+            </div>
+            <div class="btns">
+                <a href="#" id="play">Watch <i class="fa fa-play"></i></a>
+                <a href="#" id="download"><i class="fa fa-download"></i></a>
+            </div>
+        </div>
+        <section>
+            <h4>Popular</h4>
+            <i class="fa fa-chevron-left"></i>
+            <i class="fa fa-chevron-right"></i>
+            <div class="cards">
+                <!-- All Movies appear here.. -->
+            </div>
+        </section>
+    </header>
+    <script src="app.js"></script>
+    <script>
+        // Get the movie index from the query parameter (e.g., ?movie=0)
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieIndex = urlParams.get("movie");
+        // const moviePostersContainer = document.getElementById("movie-posters");
+        const header = document.getElementById("movie-posters");
+
+        // Fetch movie data from your API or JSON file
+        const movieDataUrl = "movie.json"; // Replace with your actual URL
+        fetch(movieDataUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                const movie = data[movieIndex]; // Get the specific movie based on the index
+
+                // Display movie details
+                document.getElementById("movie_title").innerText = movie.name;
+                document.getElementById("movie_gen").innerText = movie.genre;
+                document.getElementById("movie_date").innerText = movie.date;
+                document.getElementById("movie_rate").innerText = movie.imdb;
+                document.getElementById("movie_type").innerText = movie.type;
+                document.getElementById("movie_short-intro").innerText = movie.intro;
+                // const bg_vid = document.createElement("video");
+                // bg_vid.autoplay = true;
+                // bg_vid.muted = true;
+                // bg_vid.loop = true;
+                // bg_vid.src = movie.trailer;
+                // videoContainer.appendChild(bg_vid);
+                // const poster = document.("img");
+                //     poster.src = movie.bposter;
+                //     poster.alt = movie.name;
+                //     moviePostersContainer.appendChild(poster);
+                // header.style.backgroundImage = `url('${movie.bposter}')`;
+            })
+            .catch((error) => {
+                console.error("Error fetching movie data:", error);
+            });
+    </script>
+
+</body>
+
+</html>

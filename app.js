@@ -5,9 +5,7 @@ let search = document.getElementsByClassName("search")[0];
 let search_input = document.getElementById("search_input");
 let series = document.getElementById("series");
 let movies = document.getElementById("movies");
-let videoContainer  = document.getElementById("video");
-
-
+let videoContainer = document.getElementById("video");
 
 right_btn.addEventListener("click", () => {
   cards.scrollLeft += 140;
@@ -19,6 +17,7 @@ left_btn.addEventListener("click", () => {
 // to show all movie data on home
 let movie_data = "movie.json";
 
+
 fetch(movie_data)
   .then((Response) => Response.json())
   .then((data) => {
@@ -26,7 +25,7 @@ fetch(movie_data)
       let { name, imdb, date, sposter, bposter, genre, url } = ele;
       let card = document.createElement("a");
       card.classList.add("card");
-      card.href = url;
+      card.href = `movie.html?movie=${i}`; // Include the movie index in the URL
       card.innerHTML = `
         <img src="${sposter}" alt="${name}" class="poster">
         <div class="rest_card">
@@ -43,23 +42,19 @@ fetch(movie_data)
       cards.appendChild(card);
     });
 
-    // Get a random index within the data array
-    const randomIndex = Math.floor(Math.random() * data.length);
-    const randomMovie = data[randomIndex];
 
-    document.getElementById("title").innerText = randomMovie.name;
-    document.getElementById("gen").innerText = randomMovie.genre;
-    document.getElementById("date").innerText = randomMovie.date;
-    document.getElementById("rate").innerText = randomMovie.imdb;
-    document.getElementById("type").innerText = randomMovie.type;
-    document.getElementById("short-intro").innerText = randomMovie.intro;
+    document.getElementById("title").innerText = data[0].name;
+    document.getElementById("gen").innerText = data[0].genre;
+    document.getElementById("date").innerText = data[0].date;
+    document.getElementById("rate").innerText = data[0].imdb;
+    document.getElementById("type").innerText = data[0].type;
+    document.getElementById("short-intro").innerText = data[0].intro;
     const bg_vid = document.createElement("video");
     bg_vid.autoplay = true;
     bg_vid.muted = true;
     bg_vid.loop = true;
-    bg_vid.src = randomMovie.trailer;
+    bg_vid.src = data[0].trailer;
     videoContainer.appendChild(bg_vid);
-
 
     // search movie from search bar and to show movie in the div
     data.forEach((ele) => {
